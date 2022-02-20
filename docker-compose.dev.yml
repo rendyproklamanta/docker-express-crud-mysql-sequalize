@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  express-dev:
+    container_name: express-dev
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command:
+      - nodemon
+      - --inspect=0.0.0.0:9229
+      - index.js

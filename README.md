@@ -68,27 +68,27 @@ Open URL in browser : http://localhost:3000
 
 ## Run the System
 <br>
+
 <b>Production</b>
 
-We can easily run the whole with only a single command:
+Run not in background:
 ```bash
 docker-compose up -t express-sequelize-mysql
 ```
 
-The service can be run on the background with command:
+Run in background
 ```bash
 docker-compose up -t express-sequelize-mysql -d 
 ```
 <br>
 <b>Local development</b>
 
-1. Rename `docker-compose.dev.yml.example` to `docker-compose.dev.yml`
-2. The service can be run on the background with command :
+1. The service can be run on the background with command :
 ```bash
 docker-compose -f docker-compose.dev.yml up -d
 ```
-3. And goto url http://localhost:3000
-4. To test edit text in server.js , save and reload web to check hot-reload work
+2. And goto url http://localhost:3000
+3. To test edit text in server.js , save and reload web to check hot-reload work
 
 <br>
 
