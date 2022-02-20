@@ -22,17 +22,22 @@
 
 **DB Commands**
 
-1. Change database host to : host.docker.internal
-2. Add user root any host in mysql : 
+1. Open XAMPP/MAMP and start mysql service
+2. Add user root with any host in mysql : 
 
 ```bash
 CREATE USER 'root_any'@'%' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON * . * TO 'root_any'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'root_any'@'%';
 ```
 3. Edit database config in .env
-
-4. For creating a model, run `sequelize model:create --name TableName --attributes columnName:string, ...`
+4. If you running with docker. Dont forget to change database host to : 
+<br> 
+`host.docker.internal` 
+<br>
+If you running without docker using yarn start, change host to : <br> 
+`localhost` 
 5. For migration, run `sequelize db:migrate`
+6. For creating a model, run `sequelize model:create --name TableName --attributes columnName:string, ...`
 
 All other **sequelize** commands are available here [Sequelize Documentation](https://sequelize.org/master/manual/model-basics.html)
 
