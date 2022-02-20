@@ -1,0 +1,16 @@
+node_modules
+yarn.lock
+package-lock.json
+.env
+.env.*
+*.dev
+.dev.*
+*.dev.*
+.git
+.gitignore
+
+.DS_Store
+build
+Makefile
+LICENSE.md
+README.md

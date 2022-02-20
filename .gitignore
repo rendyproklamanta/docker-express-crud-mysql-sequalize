@@ -1,0 +1,13 @@
+/.idea
+# Node build artifacts
+node_modules
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Local development
+.env
+*.env
+*.dev
+*.dev.*
+.DS_Store
