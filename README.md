@@ -31,11 +31,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'root_any'@'%';
 ```
 3. Edit database config in .env
 4. If you running with docker. Dont forget to change database host to : 
-<br> 
-`host.docker.internal` 
-<br>
+```
+host.docker.internal
+```
 If you running without docker using yarn start, change host to : <br> 
-`localhost` 
+```
+localhost
+```
 5. For migration, run `sequelize db:migrate`
 6. For creating a model, run `sequelize model:create --name TableName --attributes columnName:string, ...`
 
@@ -71,7 +73,6 @@ Open URL in browser : http://localhost:3000
 
 # Run with Docker Compose support hot / live reload
 
-## Run the System
 <br>
 
 <b>Production</b>
