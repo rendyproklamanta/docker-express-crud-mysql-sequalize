@@ -83,14 +83,14 @@ docker-compose up -t express-sequelize-mysql
 
 Run in background
 ```bash
-docker-compose up -t express-sequelize-mysql -d --build --force-recreate
+docker-compose up -t express-sequelize-mysql --build --force-recreate --no-deps -d
 ```
 <br>
 <b>Local development</b>
 
 1. The service can be run on the background with command :
 ```bash
-docker-compose -f docker-compose.dev.yml up -d --build --force-recreate
+docker-compose -f docker-compose.dev.yml up --build --force-recreate --no-deps -d
 ```
 2. And goto url http://localhost:3000
 3. To test edit text in server.js , save and reload web to check hot-reload work
